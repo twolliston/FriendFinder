@@ -16,12 +16,15 @@
   <!-- Chosen -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-<style>
+  <style>
     footer {
-          text-align: center
-        }
-        
-</style>
+      text-align: center
+    }
+
+    body {
+      background-color: lightslategray;
+    }
+  </style>
 </head>
 
 <body>
@@ -30,149 +33,263 @@
 
     <h2>Survey Questions</h2>
     <hr>
+    <form id="survey-form">
+      <h3>
+        <strong>About You</strong>
+      </h3>
+      <label for="name">Name:</label>
+      <input name="name" type="text" id="name" class="form-control" required>
+      <label for="photo">Photo:</label>
+      <input name="photo" type="text" id="photo" class="form-control">
 
-    <h3><strong>About You</strong></h3>
-    <label for="name">Name:</label>
-    <input name ="name"type="text" id="name" class="form-control"  required>
+      <hr>
+      <!-- Question one dropdown  -->
+      <h3>
+        <strong>Selection 1</strong>
+      </h3>
+      <label name="sel-1">Do you like reading in your free time?</label>
+      <select name="sel-1" class="options-answer" id="s_01">
+        <option value="">-choose one-</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-    <hr>
-    <!-- Question one dropdown  -->
-    <h3><strong>Selection 1</strong></h3>
-    <label name="sel-1">Do you like reading in your free time?</label>
-    <select name="sel-1" class="options-answer" id="s_1">
-      <option value="">-choose one-</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+      <!-- Question two dropdown  -->
+      <h3>
+        <strong>Selection 2</strong>
+      </h3>
+      <label name="sel-2">Are you more of an indoors or outdoors person?</label>
+      <select name="sel-2" class="options-answer" id="s_02">
+        <option value="">-choose one-</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-    <!-- Question two dropdown  -->
-    <h3><strong>Selection 2</strong></h3>
-    <label name="sel-2">Are you more of an indoors or outdoors person?</label>
-    <select name="sel-1" class="options-answer" id="s_2">
-      <option value="">-choose one-</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+      <!-- Question three dropdown  -->
+      <h3>
+        <strong>Selection 3</strong>
+      </h3>
+      <label name="sel-3">Do you enjoy jazz music?</label>
+      <select name="sel-3" class="options-answer" id="s_03">
+        <option value="">-choose one-</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-<!-- Question three dropdown  -->
-    <h3><strong>Selection 3</strong></h3>
-    <label name="sel-3">Do you enjoy jazz music?</label>
-    <select name="sel-3" class="options-answer" id="s_3">
-      <option value="">-choose one-</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+      <!-- Question four dropdown  -->
+      <h3>
+        <strong>Selection 4</strong>
+      </h3>
+      <label name="sel-4">Do you have a drink to unwind after a long day?</label>
+      <select name="sel-4" class="options-answer" id="s_04">
+        <option value="">-choose one-</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-<!-- Question four dropdown  -->
-    <h3><strong>Selection 4</strong></h3>
-    <label name="sel-4">Do you have a drink to unwind after a long day?</label>
-    <select name="sel-4" class="options-answer" id="s_4">
-      <option value="">-choose one-</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+      <!-- Question five dropdown  -->
+      <h3>
+        <strong>Selection 5</strong>
+      </h3>
+      <label name="sel-5">Do you think poodle are cute?</label>
+      <select name="sel-5" class="options-answer" id="s_05">
+        <option value="">-choose one-</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-<!-- Question five dropdown  -->
-    <h3><strong>Selection 5</strong></h3>
-    <label name="sel-5">Do you think poodle are cute?</label>
-    <select name="sel-5" class="options-answer" id="s_5">
-      <option value="">-choose one-</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+      <!-- Question six dropdown  -->
+      <h3>
+        <strong>Selection 6</strong>
+      </h3>
+      <label name="sel-6">Do you prefer to work in a team or alone?</label>
+      <select name="sel-6" class="options-answer" id="s_06">
+        <option value="">-choose one-</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-<!-- Question six dropdown  -->
-    <h3><strong>Selection 6</strong></h3>
-    <label name="sel-6">Do you prefer to work in a team or alone?</label>
-    <select name="sel-6" class="options-answer" id="s_6">
-      <option value="">-choose one-</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+      <!-- Question seven dropdown  -->
+      <h3>
+        <strong>Selection 7</strong>
+      </h3>
+      <label name="sel-7">Would you like to be famous?</label>
+      <select name="sel-7" class="options-answer" id="s_07">
+        <option value="">-choose one-</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-<!-- Question seven dropdown  -->
-    <h3><strong>Selection 7</strong></h3>
-    <label name="sel-7">Would you like to be famous?</label>
-    <select name="sel-7" class="options-answer" id="s_7">
-      <option value="">-choose one-</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+      <!-- Question eight dropdown  -->
+      <h3>
+        <strong>Selection 8</strong>
+      </h3>
+      <label name="sel-8">Would you rather live full time in an RV or full time on a sailboat?</label>
+      <select name="sel-8" class="options-answer" id="s_08">
+        <option value="">-choose one-</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-    <!-- Question eight dropdown  -->
-    <h3><strong>Selection 8</strong></h3>
-    <label name="sel-8">Would you rather live full time in an RV or full time on a sailboat?</label>
-    <select name="sel-8" class="options-answer" id="s_8">
-      <option value="">-choose one-</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+      <!-- Question nine dropdown  -->
+      <h3>
+        <strong>Selection 9</strong>
+      </h3>
+      <label name="sel-9">Would you rather have an incredibly fast car or incredibly fast internet speed?</label>
+      <select name="sel-9" class="options-answer" id="s_09">
+        <option value="">-choose one-</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-    <!-- Question nine dropdown  -->
-    <h3><strong>Selection 9</strong></h3>
-    <label name="sel-9">Would you rather have an incredibly fast car or incredibly fast internet speed?</label>
-    <select name="sel-9" class="options-answer" id="s_09">
-      <option value="">-choose one-</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+      <!-- Question ten dropdown  -->
+      <h3>
+        <strong>Selection 10</strong>
+      </h3>
+      <label name="sel-10">You like eating sushi?</label>
+      <select name="sel-10" class="options-answer" id="s_10">
+        <option value="">-choose one-</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-    <!-- Question ten dropdown  -->
-    <h3><strong>Selection 10</strong></h3>
-    <label name="sel-10">You like eating sushi?</label>
-    <select name="sel-10" class="options-answer" id="s_10">
-      <option value="">-choose one-</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+      <br>
+      <br>
 
-    <br>
-    <br>
-
-    <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
-     Submit</button>
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+        Submit</button>
+    </form>
 
     <hr>
 
     <footer>
-        <span> Copyright ©</span>
-      </footer>
-    
+      <span> Copyright ©</span>
+    </footer>
+
 
   </div>
 
- 
+  <script type="text/javascript">
+
+    // Capture the user inputs
+    $("#submit").on("click", function (event) {
+      event.preventDefault();
+
+      // Create an object for the user's data
+      var userData = {
+        name: $("#name").val(),
+        photo: $("#photo").val(),
+        scores: [
+          $("#s_01").val(),
+          $("#s_02").val(),
+          $("#s_03").val(),
+          $("#s_04").val(),
+          $("#s_05").val(),
+          $("#s_06").val(),
+          $("#s_07").val(),
+          $("#s_08").val(),
+          $("#s_09").val(),
+          $("#s_10").val()
+        ]
+      };
+      // console.log(userData);
+      // AJAX post the data to the friends API.
+      $.post("/api/friends", userData, function (data) {
+        // console.log("Posted");
+      });
+
+      //Get current URL   
+      var currentURL = window.location.origin;
+      // AJAX get the data to the friends API.
+      $.ajax({
+        url: currentURL + "/api/friends",
+        method: "GET"
+      }).then(function (friendData) {
+
+        // console.log(friendData);
+
+        // Variable for the bestMatch
+        var match = {
+          diff: 0,
+          friend: {}
+        }
+        console.log("Users name:" + userData.name);
+        // console.log("name:" + i + friendData[i].name + userData.name);
+
+        // For loop to run over the friends Data
+        for (var i = 0; i < friendData.length; i++) {
+
+          if (userData.name != friendData[i].name) {
+
+            // console.log("Freinds name:" + i + friendData[i].name);
+
+            var totalDiff = 0;
+
+            // loop over the scores
+            for (var j = 0; j < friendData[i].scores.length; j++) {
+              //  subtract the user scores from current potential friend score
+              var difference = Math.abs(parseInt(friendData[i].scores[j]) - parseInt(userData.scores[j]));
+              // console.log("diff: " + difference + 'Friend: ' + friendData[i].scores[j] + 'User: ' + userData.scores[j]);
+              totalDiff += difference;
+            }
+            // console.log(friendData[i].name + ' ' + totalDiff);
+
+            // initialize array new first freind
+            if (match.diff === 0) {
+              match.diff = totalDiff;
+              match.friend = friendData[i].name;
+            } else {
+              // set array if difference is less than prior freind
+              if (totalDiff < match.diff) {
+                match.diff = totalDiff;
+                match.friend = friendData[i].name;
+              }
+            }
+
+
+          }
+
+        }
+        // Clear inputs fields
+        document.getElementById("survey-form").reset();
+         // console.log(match);
+        alert("You've found a new freind with " + match.friend);
+
+      });
+
+    });
+  </script>
 
 
 </body>

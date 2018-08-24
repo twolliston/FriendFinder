@@ -2,7 +2,8 @@
     width: 100%;
     height: 900px;
     margin-bottom: 0px;
-    background-image: url("david-marcu-441-unsplash.jpg");
+    background-image: url("./images/david-marcu-441-unsplash.jpg");
+    /* background-color: black; */
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
